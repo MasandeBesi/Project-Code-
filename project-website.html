@@ -70,7 +70,6 @@ We investigate the effectiveness of hedging a European basket swap option using 
 </p>
 
 
-
 <p>
 To optimize the hedging strategy, we use the Heston model as the underlying path generator, accounting for stochastic volatility, co-variation between stocks and their volatilities, and the correlation between the two stocks. Parameter estimation for the multivariate Heston model is carried out by first discretizing the model using Euler's method and then applying Maximum Likelihood Estimation (MLE) on the joint multivariate normal distribution of the stock prices and volatilities. Finally, we implement neural networks to hedge the option and compare the results with a hedge based on the Black-Scholes model.
 </p>
