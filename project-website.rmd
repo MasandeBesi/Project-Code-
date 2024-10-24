@@ -1,0 +1,44 @@
+---
+title: "Mean-Variance Hedging with Neural Networks using Heston Model"
+subtitle: "Stats Honours Project 2024"
+format: html
+theme: united
+mainfont: sans-serif;
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{=html}
+<hr>
+<h3>Abstract</h3>
+<p>
+We investigate the effectiveness of hedging a European basket swap option using a neural network-based hedge compared to a traditional Black-Scholes hedge within a contractual framework involving two parties. The contractual agreement stipulates that at a time <i>T</i>, if the value of the stock owned by party one exceeds that of party two, a trade occurs; otherwise, the option is not exercised. The payoff for the option is given by <i>Π = (S<sup>1</sup><sub>T</sub> - S<sup>2</sup><sub>T</sub>)<sup>+</sup></i>, where <i>S<sup>1</sup><sub>T</sub></i> and <i>S<sup>2</sup><sub>T</sub></i> represent the values of the stocks owned by party one and party two, respectively.
+</p>
+
+
+<p>
+To optimize the hedging strategy, we use the Heston model as the underlying path generator, accounting for stochastic volatility, co-variation between stocks and their volatilities, and the correlation between the two stocks. Parameter estimation for the multivariate Heston model is carried out by first discretizing the model using Euler's method and then applying Maximum Likelihood Estimation (MLE) on the joint multivariate normal distribution of the stock prices and volatilities. Finally, we implement neural networks to hedge the option and compare the results with a hedge based on the Black-Scholes model.
+</p>
+<p><strong>Keywords:</strong> European basket swap option, Neural networks, Black-Scholes model, Heston model, Stochastic volatility, Maximum Likelihood Estimation.</p>
+
+<hr>
+```
+```{=html}
+<a href="BSXMAS002_MBNLWA009_Honours_Project_2024.pdf" target="_blank">BSXMAS002_MBNLWA009_Honours_Project_2024</a>
+<br /><br />
+```
+```{=html}
+<div style="text-align: left;">
+        Author: <br />
+        Masande Besi <br />
+        Lwando Mbanguta
+</div>
+<br />
+<div style="text-align: left;">
+        Supervisor: <br />
+        Yuri Robbertze <br />
+        Jake Stangroom
+</div>
+```
+<img src="UCT logo horizontal grayscale large.png" alt="UCT Logo" style="width: 200px; height: auto; float: right;"/>
